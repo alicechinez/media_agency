@@ -16,6 +16,9 @@ app.get('/vpon', (req, res) => {
 app.get('/clickforce', (req, res) => {
 	res.render('clickforce')
 })
+app.get('/taoge', (req, res) => {
+	res.render('taoge')
+})
 app.get('/', (req, res) => {
 	res.render('adsbygoogle')
 })
