@@ -11,19 +11,22 @@ app.use(express.static('public'))
 
 // setting routes
 app.get('/vpon', (req, res) => {
-	res.render('vpon')
+  res.render('vpon')
 })
 app.get('/clickforce', (req, res) => {
-	res.render('clickforce')
+  res.render('clickforce')
 })
 app.get('/taoge', (req, res) => {
-	res.render('taoge')
+  res.render('taoge')
+})
+app.get('/scupio', (req, res) => {
+  res.render('scupio')
 })
 app.get('/', (req, res) => {
-	res.render('adsbygoogle')
+  res.render('adsbygoogle')
 })
 
 // listening
 app.listen(port, () => {
-	console.log(`The server is listening on http://localhost:${port}`)
+  console.log(`The server is listening on http://localhost:${port}`)
 })
